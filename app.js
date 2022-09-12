@@ -28,7 +28,7 @@ function submitHandler(){
         +dotTwoLimiter(profitPercentage)+"%");
     }
     else{
-        document.getElementById("output").style.color="blue";
+        document.getElementById("output").style.color="white";
             showMessage("no profit, no loss");
     }
 
