@@ -47,6 +47,10 @@ function checkValue(ip, sq, curr){
         document.getElementById("output").style.color="orange";
         showMessage("some fields are still empty");
     }
+    else if(ip<0 || sq<0 || curr<0){
+        document.getElementById("output").style.color="#22d3ee";
+        showMessage("put valid values(values can't be negative)");
+    }
     else{
         calculateProfitAndLoss(ip, sq, curr);
     }
